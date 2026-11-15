@@ -1197,6 +1197,14 @@ section.art-sec:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom:
 .lx-tags i { font-style: normal; margin: 0 7px; color: #B4BEC8; }
 @media (max-width: 1100px) { .lx { grid-template-columns: 104px minmax(0, 1fr) 30px; } .lx-img { width: 104px; height: 74px; } }
 @media (max-width: 560px) { .lx { grid-template-columns: 92px minmax(0, 1fr); } .lx-img { width: 92px; height: 66px; } .lx-flag { display: inline-flex; font-size: 10.5px; left: 5px; top: 5px; padding: 2px 6px; } }
+/* Subtle side tint on cards: green for home, blue for business */
+#col-home .lx { background: linear-gradient(135deg, #F6FBF8 0%, #FBFDFC 100%); border-color: #E2EEE7; }
+#col-home .lx:hover { border-color: #C4DFCF; }
+#col-home .lx-go { background: #EAF4EE; }
+#col-biz .lx { background: linear-gradient(135deg, #F5F9FD 0%, #FBFCFE 100%); border-color: #E0E9F3; }
+#col-biz .lx:hover { border-color: #C6D5E4; }
+#col-biz .lx-go { background: #E8F0F9; }
+#col-home .lx:hover .lx-go, #col-biz .lx:hover .lx-go { background: var(--accent); }
 
 .ch-facts { gap: 6px; }
 .ch-facts li { font-size: 13px; padding: 5px 10px 5px 9px; gap: 6px; }
